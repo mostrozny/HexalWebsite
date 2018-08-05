@@ -119,6 +119,13 @@ header {
     width: 100%;
     padding-top: 60px;
     padding-bottom: 60px;
+    @media screen and (max-width: 500px){
+      flex-direction: column;
+      article {
+        padding-top: 20px;
+        min-width: 95%;
+      }
+    }
     .info--image {
       -webkit-clip-path: polygon(40% 0, 60% 0, 100% 25%, 100% 75%, 60% 100%, 40% 100%, 0 75%, 0 25%);
       clip-path: polygon(40% 0, 60% 0, 100% 25%, 100% 75%, 60% 100%, 40% 100%, 0 75%, 0 25%);
@@ -138,10 +145,40 @@ footer {
   background-color: #323232;
   .container {
     padding-top: 50px;
+    @media screen and (max-width: 500px) {
+      h3, h4 {
+      padding-left: 12px;
+        padding-right: 12px;
+      }
+    }
     .contact {
       width: 100%;
       display: flex;
       justify-content: space-between;
+      @media screen and (max-width: 500px){
+        h3, h4 {
+
+        }
+        flex-direction: column;
+        align-items: center;
+        form {
+          width: 100%;
+          flex-direction: column;
+          align-items: center;
+          input {
+            width: 95%;
+          }
+        }
+        span {
+          padding-top: 20px;
+          width: 100%;
+          flex-direction: column;
+          align-items: center;
+          article {
+            width: 95%;
+          }
+        }
+      }
       form {
         padding-top: 20px;
         min-width: 70%;
