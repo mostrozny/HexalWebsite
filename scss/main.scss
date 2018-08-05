@@ -68,9 +68,23 @@ header {
     margin-top: 90px;
     .gallery-row {
       display: flex;
-      flex-wrap: wrap;
+     // flex-wrap: wrap;
       justify-content: center;
-
+      @media screen and (max-width: 1000px){
+        .img8, .img9 {
+          display: none;
+        }
+      }
+      @media screen and (max-width: 800px){
+        .img3, .img4, .img13, .img12 {
+          display: none;
+        }
+      }
+      @media screen and (max-width: 600px){
+        .img6, .img7 {
+          display: none;
+        }
+      }
       .gallery-image {
         -webkit-clip-path: polygon(40% 0, 60% 0, 100% 25%, 100% 75%, 60% 100%, 40% 100%, 0 75%, 0 25%);
         clip-path: polygon(40% 0, 60% 0, 100% 25%, 100% 75%, 60% 100%, 40% 100%, 0 75%, 0 25%);
